@@ -1,8 +1,10 @@
-package ru.alekstereh.task_notes;
+package ru.alekstereh.task_notes.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import ru.alekstereh.task_notes.R;
 
 public class MainActivity extends AppCompatActivity {
 

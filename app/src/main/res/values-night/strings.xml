@@ -1,10 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Task_Notes</string>
     <string name="msk">Москва</string>
     <string name="ebrg">Екатеринбург</string>
     <string name="nsk">Новосибирск</string>
     <string name="sam">Самара</string>
-    <string name="spb">Санкт-Петербург</string>
-    <string name="cities">cities</string>
-    <string name="todo">todo</string>
 </resources>
