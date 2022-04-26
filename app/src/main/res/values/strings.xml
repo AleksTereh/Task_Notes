@@ -7,4 +7,6 @@
     <string name="spb">Санкт-Петербург</string>
     <string name="cities">cities</string>
     <string name="todo">todo</string>
+    <string name="notes">notes</string>
+    <string name="urok">Заметка создана 26.04.2022г</string>
 </resources>
