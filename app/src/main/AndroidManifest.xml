@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Task_Notes">
         <activity
-            android:name=".ui.CityDetailsActivity"
+            android:name=".ui.NoteDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"

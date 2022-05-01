@@ -5,32 +5,32 @@ import android.os.Parcelable;
 
 import androidx.annotation.DrawableRes;
 
-public class City implements Parcelable {
+public class Note implements Parcelable {
     private final String name;
 
     @DrawableRes
     private final int icon;
 
 
-    public City(String name, int icon) {
+    public Note(String name, int icon) {
         this.name = name;
         this.icon = icon;
     }
 
-    protected City(Parcel in) {
+    protected Note(Parcel in) {
         name = in.readString();
         icon = in.readInt();
     }
 
-    public static final Creator<City> CREATOR = new Creator<City>() {
+    public static final Creator<Note> CREATOR = new Creator<Note>() {
         @Override
-        public City createFromParcel(Parcel in) {
-            return new City(in);
+        public Note createFromParcel(Parcel in) {
+            return new Note(in);
         }
 
         @Override
-        public City[] newArray(int size) {
-            return new City[size];
+        public Note[] newArray(int size) {
+            return new Note[size];
         }
     };
 
