@@ -6,9 +6,13 @@
         <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout-land/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/activity_city_details.xml" value="0.22056159420289856" />
         <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/activity_note_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/fragment_cities_list.xml" value="0.18" />
         <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/fragment_city_details.xml" value="0.22" />
+        <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/fragment_note_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/fragment_notes_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/item_city.xml" value="0.25" />
+        <entry key="..\:/Users/Tereh/AndroidStudioProjects/android1/Task_Notes/app/src/main/res/layout/item_note.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

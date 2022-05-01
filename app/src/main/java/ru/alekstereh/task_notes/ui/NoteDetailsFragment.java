@@ -11,24 +11,24 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
 
 import ru.alekstereh.task_notes.R;
-import ru.alekstereh.task_notes.domain.City;
+import ru.alekstereh.task_notes.domain.Note;
 
-public class CityDetailsFragment extends Fragment {
+public class NoteDetailsFragment extends Fragment {
 
-    private static final String ARG_CITY = "ARG_CITY";
+    private static final String ARG_NOTE = "ARG_NOTE";
 
-    public static CityDetailsFragment newInstance(City city) {
+    public static NoteDetailsFragment newInstance(Note note) {
 
         Bundle args = new Bundle();
-        args.putParcelable(ARG_CITY, city);
+        args.putParcelable(ARG_NOTE, note);
 
-        CityDetailsFragment fragment = new CityDetailsFragment();
+        NoteDetailsFragment fragment = new NoteDetailsFragment();
         fragment.setArguments(args);
         return fragment;
     }
 
-    public CityDetailsFragment() {
-        super(R.layout.fragment_city_details);
+    public NoteDetailsFragment() {
+        super(R.layout.fragment_note_details);
     }
 
     private TextView title;
@@ -44,24 +44,24 @@ public class CityDetailsFragment extends Fragment {
 
 
         getParentFragmentManager()
-                .setFragmentResultListener(CitiesListFragment.CITIES_CLICKED_KEY, getViewLifecycleOwner(), new FragmentResultListener() {
+                .setFragmentResultListener(NotesListFragment.NOTES_CLICKED_KEY, getViewLifecycleOwner(), new FragmentResultListener() {
                     @Override
                     public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
-                        City city = result.getParcelable(CitiesListFragment.SELECTED_CITY);
+                        Note note = result.getParcelable(NotesListFragment.SELECTED_NOTE);
 
-                        showCity(city);
+                        showCity(note);
                     }
                 });
 
-        if (getArguments() != null && getArguments().containsKey(ARG_CITY)){
-            City city = getArguments().getParcelable(ARG_CITY);
-            showCity(city);
+        if (getArguments() != null && getArguments().containsKey(ARG_NOTE)){
+            Note note = getArguments().getParcelable(ARG_NOTE);
+            showCity(note);
         }
 
     }
 
-    private void showCity(City city){
-        title.setText(city.getName());
-        icon.setImageResource(city.getIcon());
+    private void showCity(Note note){
+        title.setText(note.getName());
+        icon.setImageResource(note.getIcon());
     }
 }
