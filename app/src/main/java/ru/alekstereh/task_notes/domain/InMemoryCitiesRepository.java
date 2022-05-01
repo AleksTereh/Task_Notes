@@ -33,6 +33,8 @@ public class InMemoryCitiesRepository implements CitiesRepository{
         result.add( new City(context.getString(R.string.nsk), R.drawable.nsk));
         result.add( new City(context.getString(R.string.sam), R.drawable.sam));
         result.add( new City(context.getString(R.string.spb), R.drawable.spb));
+        result.add( new City(context.getString(R.string.urok), android.R.drawable.btn_star_big_on));
+
 
         return result;
     }
@@ -42,3 +44,4 @@ public class InMemoryCitiesRepository implements CitiesRepository{
 
     }
 }
+
